@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img[class] {
+        border: 2px solid red; /* selecting an  img element by using attribute name not a value */
+      }
+      a[class="first"] {
+        border: 2px solid blue; /* selecting an element with attribute value */
+      }
+      img[id~="task"] {
+        border: 2px solid green; /* selecting an element with attribute value matching any word passed by the attribute */
+      }
+      a[id|="Support"] {
+        border: 2px solid yellow; /* selecting an element followed by hypen */
+      }
+      a[id^="Program"] {
+        border: 2px solid black; /* selecting an element which starts with word */
+      }
+      a[id$="Trainer"] {
+        border: 2px solid pink; /* selecting an element which an attribute value ends with word */
+      }
+      [class*="ai"] {
+        background-color: orange; /* selecting an element based on the characters present in a attribute value */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Attribute Selectors
+     Selectors based on the attribute of an element.There are many ways to select an element based on attribute.Attribute selector can be represented by [].
+     1.[attribute name]->select an attribute with name
+     2.[attribute = "value"]->select an attribute with value
+     3.[attribute ~ ="value"]-> select an attribute with similar word in a attribute value
+     4.[attribute | ="value"] -> check for an attribute with starting word followed by -(hypen)
+     5.[attribute ^ ="value"]->check for an attribute with starting word
+     6.[attribute $ = "value"]-> check for an attribute with ending word 
+     7.[attribute * = "value"]-> check for an attribute  whose value characters present in a attribute value  is present or not  */
+ -->
+    <img class="" src="./car.jpg"/ height="100" width="100"><br />
+    <a class="first" href="">Hello</a><br />
+    <a class="second" href="">Welcome to 10K Coders</a><br />
+    <img
+      id="tab task one"
+      src="../output snaps/Table task1 output.png"
+      height="100"
+      width="100"
+    /><br />
+    <a href="" id="Support-team">Hi Sunitha</a><br /><br />
+    <a href="" id="Program Manager">Hi Spandana </a><br /><br />
+    <a href="" id="Doubt Trainer">Hi Hemanth</a>
+    <h1 class="main match">World Cup Final</h1>
+  </body>
+</html>
